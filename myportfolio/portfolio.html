@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Jane Doe</h1>
+        <h2>Aspiring Computer Science Student</h2>
+        <p>Welcome to my portfolio! I'm passionate about coding and technology.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card" onclick="alert('School Management System: A web application built with Python and Django')">
+            <h3>School Management System</h3>
+            <p>A web application to manage student records and grades</p>
+        </div>
+        <div class="project-card" onclick="alert('Weather App: Mobile app built with React Native showing real-time weather data')">
+            <h3>Weather App</h3>
+            <p>Mobile application displaying real-time weather information</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Python</span>
+            <span class="skill">React</span>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: jane.doe@example.com</p>
+        <p>GitHub: github.com/janedoe</p>
+        <p>LinkedIn: linkedin.com/in/janedoe</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Jane Doe. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
